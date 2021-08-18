@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Nav } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+const Navbar = () => {
   return (
     <>
       <Nav>
-        <p>Crystal Anderson</p>
+        <Link to="/">Homepage</Link>
+        <Link to="/about">About</Link>
+        <Link to="/resume">Resume</Link>
       </Nav>
     </>
   );
